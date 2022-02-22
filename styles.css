@@ -36,6 +36,7 @@ header nav {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px gainsboro solid;
+  flex-wrap: wrap;
 }
 header nav input {
   margin-left: 1rem;
@@ -257,4 +258,24 @@ header nav input {
 footer {
   height: 20rem;
   background-color: var(--bgColor);
+}
+/* Cellphone size media querie */
+@media only screen and (max-width: 650px) {
+  header nav input {
+    width: 20%;
+  }
+
+  .logo {
+    width: 6rem;
+
+    left: 40%;
+  }
+
+  .productList {
+    width: 25%;
+    margin-left: -50%;
+  }
+  .products {
+    margin-left: 25%;
+  }
 }
