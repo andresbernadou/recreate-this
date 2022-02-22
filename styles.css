@@ -1,0 +1,262 @@
+/* fonts go here */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap");
+/* variables go here */
+:root {
+  --mainFont: "Roboto", sans-serif;
+  --mainColor: white;
+  --subColor: #f24024;
+  --bgColor: #e5e5e5;
+}
+light {
+  color: lightslategray;
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+strong {
+  font-size: 2rem;
+}
+h4 {
+  color: lightslategray;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+body {
+  font-family: var(--mainFont);
+  box-sizing: border-box;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px gainsboro solid;
+}
+header nav input {
+  margin-left: 1rem;
+
+  background-color: var(--bgColor);
+  border-radius: 6%;
+  align-self: center;
+  border: none;
+  height: 2.2rem;
+  width: 30%;
+  padding-left: 0.5rem;
+}
+.input {
+  background-image: url(img/zoom.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 0.4rem;
+
+  background-size: 4%;
+  padding-left: 1rem;
+}
+.logo {
+  width: 11rem;
+  margin-top: 0;
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  left: 45%;
+}
+.buttons ul {
+  display: flex;
+}
+.buttons ul li {
+  list-style: none;
+  padding: 0.5rem;
+  width: 3.5rem;
+
+  text-align: center;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+}
+.orange {
+  background-color: var(--subColor);
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.orange:hover {
+  background-color: orangered;
+
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  transform: translate(-0.2rem, -0.2rem) scale(1.1);
+}
+.grey {
+  background-color: var(--bgColor);
+  font-weight: bold;
+}
+.grey:hover {
+  background-color: lightgray;
+  transition: 0.1s ease-in-out;
+  transform: translate(0.2rem, -0.2rem) scale(1.1);
+}
+.mainProduct {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+.mainProduct img {
+  width: 33%;
+  align-self: center;
+}
+.productTitle {
+  align-self: center;
+  text-align: center;
+}
+.recipeType {
+  align-self: center;
+  text-align: center;
+}
+.productList {
+  align-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  border-bottom: 1px gainsboro solid;
+  text-align: center;
+  align-content: center;
+
+  width: 33%;
+}
+.productCard h3 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+.productList li {
+  display: grid;
+
+  list-style: none;
+  align-content: space-around;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+  border-right: 1px gainsboro solid;
+
+  margin-bottom: 1rem;
+}
+.productList li img {
+  align-items: center;
+  width: 4rem;
+  align-self: center;
+}
+.ingredients {
+  align-self: center;
+}
+.ingredients h4 {
+  float: right;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+.two {
+  margin-left: 33%;
+  width: 33%;
+}
+.two ul {
+  align-items: left;
+  align-content: flex-start;
+}
+.two ul li {
+  width: max-content;
+}
+
+.seeMore {
+  text-align: center;
+  padding-bottom: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+.productCard {
+  aspect-ratio: 1/1.2;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  width: 200px;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.productCard:hover {
+  transition: 0.1s ease-out;
+  transform: translate(-0.2rem, -0.2rem) scale(1.05);
+}
+
+.productCard img {
+  width: 200px;
+  z-index: 100;
+  border-radius: 0.3rem;
+}
+
+.imageText {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  z-index: 200;
+  background-color: black;
+  width: 200px;
+  height: 60px;
+  border-radius: 0 0 0.3rem 0.3rem;
+
+  opacity: 0.5;
+}
+
+.productCard h3 {
+  position: absolute;
+  color: white;
+  z-index: 400;
+  opacity: 1;
+  top: 63%;
+  left: 45%;
+  transform: translate(-45%, -63%);
+  width: 180px;
+  font-size: 0.9rem;
+}
+.firstbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-top: -0.5rem;
+}
+.firstbox img {
+  width: 10%;
+  align-self: center;
+}
+.rattingBox {
+  border: 0.5px gainsboro solid;
+  padding: 0.2rem;
+}
+
+.secondbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.5rem;
+}
+.secondbox img {
+  width: 10%;
+  align-self: center;
+}
+
+footer {
+  height: 20rem;
+  background-color: var(--bgColor);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=100vw, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Beer-can-cabbage-recipe</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input
+          class="input"
+          type="text"
+          placeholder="  Search by recipe or ingredients..."
+        />
+        <img class="logo" src="img/punchboxlogo.png" />
+        <div class="buttons">
+          <ul>
+            <li class="orange"><a>Log in</a></li>
+            <li class="grey"><a>Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainProduct">
+        <img class="productImg" src="img/cabbage.png" />
+        <h2 class="productTitle">Barbecue Beer-Can Cabbage</h2>
+        <h4 class="recipeType">VEGAN - 2 HR 15 MINS</h4>
+        <ul class="productList">
+          <li><strong>63</strong>/100 Rating</li>
+          <li><img src="img/epi.png" />Epicurious</li>
+          <li><strong>6</strong><br />ingredients</li>
+        </ul>
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <h4 class="grey">Serves 8-12</h4>
+          <p>
+            1 large purpe cabbage (about 3 1/2 pounds)
+            <br />
+            2 tablespoons vegetable oil
+            <br />
+            1/2 teaspoon kosher salt
+            <br />
+            1/4 teaspoon freshly ground black pepper
+            <br />
+            1 (12-ounce) can pale lager
+            <br />
+            2 cups homemade or store-bought barbecue sauce (preferably kraft
+            Original barbecue..)
+          </p>
+        </div>
+        <div class="buttons two">
+          <ul>
+            <li class="orange">
+              <a>Directions</a>
+            </li>
+            <li class="grey">
+              <a>Save</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="seeMore">From Epicurious <light>SEE ALL ></light></h2>
+      <article class="products">
+        <template id="productsTemplate">
+          <div class="productCard">
+            <img
+              alt="dog"
+              src="https://i0.wp.com/theverybesttop10.com/wp-content/uploads//12/Top-10-Four-Equal-Sided-Dog-Square-Grooming-4.jpg?fit=544%2C500&ssl=1"
+            />
+            <div class="imageText"></div>
+            <h3>Beer-Can Cabbage Sandwiches</h3>
+            <div class="firstbox">
+              <img alt="#" src="img/epi2.png" />
+              <p>Epicurious</p>
+              <p class="rattingBox">0</p>
+            </div>
+            <div class="secondbox">
+              <img alt="#" src="img/clock.png" />
+              <p class="uploadedTime">1 year ago</p>
+              <p>Rating</p>
+            </div>
+          </div>
+        </template>
+      </article>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="index.js"></script>
+</html>
