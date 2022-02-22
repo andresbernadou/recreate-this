@@ -208,9 +208,9 @@ header nav input {
 
 .imageText {
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  top: 160px;
+  right: 16px;
   z-index: 200;
   background-color: black;
   width: 200px;
@@ -225,9 +225,8 @@ header nav input {
   color: white;
   z-index: 400;
   opacity: 1;
-  top: 63%;
-  left: 45%;
-  transform: translate(-45%, -63%);
+  top: 160px;
+  right: 25px;
   width: 180px;
   font-size: 0.9rem;
 }
